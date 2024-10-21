@@ -1,0 +1,14 @@
+Name: video.rpc
+ListenOn: 0.0.0.0:8080
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: video.rpc
+DB:
+  DataSource: root:Wyb256728@tcp(172.21.208.1:3306)/video?parseTime=true
+  Idle: 10
+  Active: 100
+  IdleTimeout: 3600s
+BizRedis:
+  Host: 127.0.0.1:6379
+  Pass:

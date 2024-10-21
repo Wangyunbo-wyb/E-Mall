@@ -1,0 +1,20 @@
+Name: message.rpc
+ListenOn: 0.0.0.0:9003
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: message.rpc
+
+Prometheus:
+  Host: 0.0.0.0
+  Port: 4003
+  Path: /metrics
+
+CacheRedis:
+  - Address: 127.0.0.1:6379
+    Password:
+    Type: node
+BizRedis:
+  Address: 127.0.0.1:6379
+  Password:
+  Type: node
